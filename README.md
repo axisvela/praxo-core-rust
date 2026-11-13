@@ -8,6 +8,7 @@ human-in-the-loop approval, checkpoints, events, and tool calling.
 - Registry: crates.io
 - Install: `cargo add praxo-core@0.6.0`
 - Documentation: https://axisvela.github.io/praxo-core/languages/rust/
+- Examples: https://github.com/axisvela/praxo-core-rust/tree/main/language/rust/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-rust
 - Canonical source: https://github.com/axisvela/praxo-core/tree/main/language/rust
 - Release index: https://axisvela.github.io/praxo-core/languages/registry-status/
