@@ -63,7 +63,7 @@ See the [full Rust README](language/rust/README.md) for complete installation, b
 
 | Capability | Status | Detail |
 | --- | --- | --- |
-| OpenAI-compatible model | native | `openai_compat` |
+| OpenAI-compatible model | native | `openai_compat::OpenAICompatible` behind optional `http-ureq`; `parse_stream` always available |
 | Anthropic model | native (transport seam) | `adapters::anthropic`; caller supplies transport |
 | Gemini model | native (transport seam) | `adapters::gemini`; caller supplies transport |
 | MCP client | native | `mcp::McpClient`; stdio, plus `McpClient::connect_http` over a caller-supplied `McpHttpTransport` seam for Streamable HTTP 2025-03-26 |
@@ -78,15 +78,17 @@ Runnable examples live under [`language/rust/examples`](language/rust/examples).
 
 | Example | What it shows |
 | --- | --- |
-| [checkpoint](language/rust/examples/checkpoint) | This example uses published crates.io `praxo-core@0.6.0` to keep checkpoint storage application-owned while using the SDK allowlist for payload encoding. |
-| [event-sink](language/rust/examples/event-sink) | This example uses published crates.io `praxo-core@0.6.0` to observe agent lifecycle and tool events without coupling the agent to a logging or telemetry backend. |
-| [identity-policy](language/rust/examples/identity-policy) | This example uses published crates.io `praxo-core@0.6.0` to bind a trusted principal to Core policy authorization. The application owns authentication and principal storage; Cor... |
-| [mcp](language/rust/examples/mcp) | This example uses published crates.io `praxo-core@0.6.0` with an in-process `McpHttpTransport`. It needs no server process and no network endpoint. |
-| [provider-fallback](language/rust/examples/provider-fallback) | This example uses published crates.io `praxo-core@0.6.0` to fall back to a second model when the primary model call fails. |
-| [retry](language/rust/examples/retry) | This example uses published crates.io `praxo-core@0.6.0` to retry transient model failures without changing the agent loop. |
-| [service](language/rust/examples/service) | This example embeds published crates.io `praxo-core@0.6.0` in a standard-library TCP/HTTP service. The application supplies a principal and tenant, restricts tools, and returns... |
-| [streaming](language/rust/examples/streaming) | This example uses published crates.io `praxo-core@0.6.0` to consume deltas while the agent loop keeps running normally. |
-| [structured-output](language/rust/examples/structured-output) | This example uses published crates.io `praxo-core@0.6.0` to validate the final answer against a JSON Schema. |
+| [checkpoint](language/rust/examples/checkpoint) | This example uses published crates.io `praxo-core@0.8.0` to keep checkpoint storage application-owned while using the SDK allowlist for payload encoding. |
+| [consumer](language/rust/examples/consumer) | This starter installs the published crates.io package `praxo-core@0.8.0` and verifies an allow/deny governed tool path. |
+| [event-sink](language/rust/examples/event-sink) | This example uses published crates.io `praxo-core@0.8.0` to observe agent lifecycle and tool events without coupling the agent to a logging or telemetry backend. |
+| [identity-policy](language/rust/examples/identity-policy) | This example uses published crates.io `praxo-core@0.8.0` to bind a trusted principal to Core policy authorization. The application owns authentication and principal storage; Cor... |
+| [live-model](language/rust/examples/live-model) | This source-mode example connects the Rust Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
+| [mcp](language/rust/examples/mcp) | This example uses published crates.io `praxo-core@0.8.0` with an in-process `McpHttpTransport`. It needs no server process and no network endpoint. |
+| [provider-fallback](language/rust/examples/provider-fallback) | This example uses published crates.io `praxo-core@0.8.0` to fall back to a second model when the primary model call fails. |
+| [retry](language/rust/examples/retry) | This example uses published crates.io `praxo-core@0.8.0` to retry transient model failures without changing the agent loop. |
+| [service](language/rust/examples/service) | This example embeds published crates.io `praxo-core@0.8.0` in a standard-library TCP/HTTP service. The application supplies a principal and tenant, restricts tools, and returns... |
+| [streaming](language/rust/examples/streaming) | This example uses published crates.io `praxo-core@0.8.0` to consume deltas while the agent loop keeps running normally. |
+| [structured-output](language/rust/examples/structured-output) | This example uses published crates.io `praxo-core@0.8.0` to validate the final answer against a JSON Schema. |
 
 ## Verify
 
