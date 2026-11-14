@@ -4,9 +4,9 @@ Dedicated repository for the Rust implementation of PRAXO-CORE: an
 embeddable, MIT-licensed agent execution kernel with policy controls,
 human-in-the-loop approval, checkpoints, events, and tool calling.
 
-- Package: `praxo-core` (`0.6.0`)
+- Package: `praxo-core` (`0.8.0`)
 - Registry: crates.io
-- Install: `cargo add praxo-core@0.6.0`
+- Install: `cargo add praxo-core@0.8.0`
 - Documentation: https://axisvela.github.io/praxo-core/languages/rust/
 - Examples: https://github.com/axisvela/praxo-core-rust/tree/main/language/rust/examples
 - Mirror repository: https://github.com/axisvela/praxo-core-rust
