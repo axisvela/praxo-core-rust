@@ -87,6 +87,7 @@ Runnable examples live under [`language/rust/examples`](language/rust/examples).
 | [live-model](language/rust/examples/live-model) | This source-mode example connects the Rust Core to an OpenAI-compatible endpoint and registers one low-risk `get_time` tool. |
 | [mcp](language/rust/examples/mcp) | This example uses published crates.io `praxo-core@0.9.1` with an in-process `McpHttpTransport`. It needs no server process and no network endpoint. |
 | [provider-fallback](language/rust/examples/provider-fallback) | This example uses published crates.io `praxo-core@0.9.1` to fall back to a second model when the primary model call fails. |
+| [representative-chain](language/rust/examples/representative-chain) | This deterministic example exercises the same application seams as the Go representative chain without a live provider or network: |
 | [retry](language/rust/examples/retry) | This example uses published crates.io `praxo-core@0.9.1` to retry transient model failures without changing the agent loop. |
 | [service](language/rust/examples/service) | This example embeds published crates.io `praxo-core@0.9.1` in a standard-library TCP/HTTP service. The application supplies a principal and tenant, restricts tools, and returns... |
 | [session-checkpoint](language/rust/examples/session-checkpoint) | This example uses published crates.io `praxo-core@0.9.1` and saves and restores a conversation history across two agent turns. It uses the Core allowlist for payload encoding an... |
