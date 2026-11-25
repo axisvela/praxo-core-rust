@@ -12,9 +12,6 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This crate is its nat
 | Source version | `0.10.0` |
 | Published version | `0.10.0` |
 | Source tag | `rust/v0.10.0` |
-| Tutorial tag | `rust/tutorial/v0.1.0` |
-| Application tag | `rust/application/v0.1.0` |
-| Examples tag | `rust/examples/v0.1.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/rust/ |
