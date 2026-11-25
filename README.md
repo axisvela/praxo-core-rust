@@ -9,9 +9,9 @@ PRAXO-CORE is an embeddable, MIT-licensed agent framework. This crate is its nat
 | Package | `praxo-core` |
 | Registry | [crates.io](https://crates.io/crates/praxo-core/0.10.0) |
 | Install | `cargo add praxo-core@0.10.0` |
-| Source version | `0.10.0` |
+| Source version | `0.11.0` |
 | Published version | `0.10.0` |
-| Source tag | `rust/v0.10.0` |
+| Source tag | `rust/v0.11.0` |
 | Tier | Core |
 | Contract | `SPEC_VERSION` `0.2.0` |
 | Documentation | https://axisvela.github.io/praxo-core/languages/rust/ |
