@@ -94,6 +94,12 @@ Runnable examples live under [`language/rust/examples`](language/rust/examples).
 | [streaming](language/rust/examples/streaming) | This example uses published crates.io `praxo-core@0.10.0` to consume deltas while the agent loop keeps running normally. |
 | [structured-output](language/rust/examples/structured-output) | This example uses published crates.io `praxo-core@0.10.0` to validate the final answer against a JSON Schema. |
 
+## Tutorials and Candidate Scenarios
+
+Start with the [Tutorial Plan](https://axisvela.github.io/praxo-core/getting-started/tutorial-plan/) for delivery standards and the [reference application portfolio](https://axisvela.github.io/praxo-core/project/roadmap/#reference-application-portfolio), review the [100 candidate agent scenarios](https://axisvela.github.io/praxo-core/getting-started/agent-scenarios/), and browse the [unified Tutorial Catalog](https://axisvela.github.io/praxo-core/getting-started/tutorial-catalog/).
+
+Chinese: [教程计划](https://axisvela.github.io/praxo-core/zh-CN/getting-started/tutorial-plan/), [候选场景](https://axisvela.github.io/praxo-core/zh-CN/getting-started/agent-scenarios/), [教程目录](https://axisvela.github.io/praxo-core/zh-CN/getting-started/tutorial-catalog/).
+
 ## Scenario Tutorials
 
 Scenario-oriented tutorials live under `language/rust/Tutorial`.
